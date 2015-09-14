@@ -79,11 +79,7 @@ class LoginVC: UIViewController {
 		return verifyLogin()
 	}
 	
-	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-		if (segue.identifier == "loggedin") {
-			
-		}
-	}
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {}
 	
 	func dataOfJson(url: String) -> NSArray{
 		var data = NSData(contentsOfURL: NSURL(string: url)!)

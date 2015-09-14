@@ -14,6 +14,10 @@ class taskPage: UIViewController, UITableViewDataSource, UITableViewDelegate, Ta
 	// initializes the taskObject array
 	var toDoItems = [taskObject]()
 	
+	@IBAction func LogoutButton(sender: UIBarButtonItem) {
+		self.performSegueWithIdentifier("Logout", sender: nil)
+	}
+	
 	@IBOutlet var tableView: UITableView!
 	
 	override func viewDidLoad() {
@@ -88,4 +92,7 @@ class taskPage: UIViewController, UITableViewDataSource, UITableViewDelegate, Ta
 		forRowAtIndexPath indexPath: NSIndexPath) {
 			cell.backgroundColor = colorForIndex(indexPath.row)
 	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {}
+	
 }

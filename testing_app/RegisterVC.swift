@@ -63,10 +63,9 @@ class RegisterVC: UIViewController {
 			confirmationColor.backgroundColor = UIColor.redColor()
 			userTextConfirm.text = "Username is taken"
 		}
-		
 	}
 	
-	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {}
 	
 	@IBOutlet weak var passwordTextMatch: UILabel!
 	@IBOutlet weak var password1: UITextField!
@@ -94,15 +93,15 @@ class RegisterVC: UIViewController {
 		}
 	}
 	
-	@IBAction func createUser(sender: UIButton) {
-		var url: NSString = "http://lifeitup.org/serviceAppend.php?user=\(username.text)&pass=\(password1.text)"
-//		url = url.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-//		url = url.stringByReplacingOccurrencesOfString("/n", withString: "%0A")
-		var data = NSData(contentsOfURL: NSURL(string: url as String)!)
-		var result = NSString(data: data!, encoding: NSUTF8StringEncoding)
-
-	}
 	
+	@IBAction func createUser(sender: UIButton) {
+		if (username.text != "" && password1.text != "" && username.text != "Username" && password1.text != "Password"){
+			var url: NSString = "http://lifeitup.org/serviceAppend.php?user=\(username.text)&pass=\(password1.text)"
+			self.performSegueWithIdentifier("registered", sender: nil)
+			var data = NSData(contentsOfURL: NSURL(string: url as String)!)
+			var result = NSString(data: data!, encoding: NSUTF8StringEncoding)
+		}
+	}
 	
 	
 	//Calls this function when the tap is recognized.

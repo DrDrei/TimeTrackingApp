@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>557050B3-612E-47AF-B6A6-771F5DB88F45</string>
+	<key>IDESourceControlProjectName</key>
+	<string>testing_app</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4463E59842CD3BC73DE83C452F530AA20746B5C6</key>
+		<string>https://github.com/DrDrei/TimeTrackingApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>testing_app.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4463E59842CD3BC73DE83C452F530AA20746B5C6</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DrDrei/TimeTrackingApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4463E59842CD3BC73DE83C452F530AA20746B5C6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4463E59842CD3BC73DE83C452F530AA20746B5C6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TimeTrackingApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
